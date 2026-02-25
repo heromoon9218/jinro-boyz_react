@@ -1,0 +1,71 @@
+.main-content {
+  padding-top: 53px;
+  padding-bottom: 10px;
+  min-height: 100vh;
+  font-family:
+    "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo, メイリオ, Osaka,
+    "MS PGothic", arial, helvetica, sans-serif;
+}
+
+.main-container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+/* Auth forms */
+.auth-page {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.auth-form .form-group {
+  margin-bottom: 15px;
+}
+
+.auth-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  width: 100%;
+  max-width: 500px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #646cff;
+}
+
+.auth-error {
+  color: #dc3545;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #f8d7da;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: firebrick;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #c0392b;
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
