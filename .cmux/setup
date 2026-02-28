@@ -1,0 +1,14 @@
+#!/bin/bash
+set -e
+
+# メインリポジトリの .env をシンボリックリンク（存在する場合）
+MAIN_REPO="$(git worktree list | head -1 | awk '{print $1}')"
+if [ -f "$MAIN_REPO/.env" ] && [ ! -f .env ]; then
+  echo "==> Linking .env from main worktree..."
+  ln -s "$MAIN_REPO/.env" .env
+fi
+
+echo "==> Installing npm dependencies..."
+npm install
+
+echo "==> React worktree ready!"
