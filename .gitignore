@@ -29,3 +29,6 @@ test-results/
 playwright-report/
 playwright/.cache/
 blob-report/
+
+# cmux worktrees
+.worktrees/
